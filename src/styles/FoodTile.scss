@@ -1,0 +1,44 @@
+@import "./partials/colors";
+
+.food-tile {
+    height: fit-content;
+    width: fit-content;
+    padding: 0 0 1% 0;
+
+    img {
+        height: 256px;
+        width: auto;
+    }
+
+    .food-details {
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0 0 0 0.2rem;
+        }
+
+        .ingredients {
+            color: grey;
+            font-size: 0.9rem;
+            padding: 0 0 0.2rem 0.2rem;
+            width: 256px;
+            height: 50px;
+        }
+
+        .price-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5% 0 5%;
+
+            button {
+                border: none;
+                color: white;
+                border-radius: 15px;
+                padding: 0.3rem 1.5rem;
+                background-color: $brand-orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.food-section {
+    margin: 1rem 0 2rem 0;
+
+    .section-title {
+        padding: 0 0 0 1rem;
+        border-bottom: 1px solid grey;
+        margin: 0 0.5rem 1rem 0.5rem;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+}

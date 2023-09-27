@@ -1,0 +1,119 @@
+@import "partials/colors";
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .header-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem 0 1rem;
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 4rem;
+                width: auto;
+            }
+
+            h1 {
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }
+
+        .reviews {
+
+            p {
+                font-weight: 600;
+            }
+
+            .time-and-review {
+                display: flex;
+                gap: 1rem;
+                color: $muted-text-color;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3rem;
+                    font-weight: 300;
+
+
+                    svg {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .contact {
+
+
+            p {
+                color: $muted-text-color;
+
+            }
+
+            .phone {
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+nav {
+    position: sticky;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2% 1% 5%;
+    top: 0;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .sections {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    .shopping-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        svg {
+            font-size: 1.3rem;
+            color: $brand-orange;
+        }
+
+        .cart-count {
+            color: $muted-text-color;
+        }
+    }
+}
