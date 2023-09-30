@@ -42,7 +42,7 @@ const Cart = ({ isOpen, onClose }) => {
                 <tr>
                   <th>Item</th>
                   <th>Name</th>
-                  <th>Quantity</th>
+                  <th>Qty</th>
                   <th>Price</th>
                   <th> </th>
                 </tr>
