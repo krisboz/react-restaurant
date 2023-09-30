@@ -71,6 +71,8 @@ header {
 
 }
 
+
+
 nav {
     position: sticky;
 
@@ -114,6 +116,70 @@ nav {
 
         .cart-count {
             color: $muted-text-color;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+
+        .header-info {
+            .logo-container {
+                img {
+                    height: 2rem;
+                    width: auto;
+                }
+
+                h1 {
+                    font-weight: 300;
+                    font-size: 1rem;
+                }
+            }
+
+            .reviews {
+
+                p {
+                    font-weight: 600;
+                    font-size: 0.7rem;
+                }
+
+                .time-and-review {
+                    display: flex;
+                    gap: 0.5rem;
+                    color: $muted-text-color;
+                    font-size: 0.7rem;
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.3rem;
+                        font-weight: 300;
+
+
+                        svg {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+
+            .contact {
+
+                font-size: 0.7rem;
+                display: none;
+            }
+        }
+    }
+
+    nav {
+        margin-top: 1rem;
+
+        .sections {
+            gap: 0.5rem;
+
+            a {
+                font-size: 0.8rem;
+            }
         }
     }
 }

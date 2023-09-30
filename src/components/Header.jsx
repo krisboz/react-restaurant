@@ -1,13 +1,22 @@
-import React from "react";
+import { useState } from "react";
 import logo from "../assets/logo.png";
 import "../styles/Header.scss";
 import {
   AiFillStar as Star,
   AiOutlineFieldTime as Time,
-  AiFillShopping as Cart,
+  AiFillShopping as CartIcon,
 } from "react-icons/ai";
 
+import calcCartAmount from "../helpers/calcCartAmount";
+import Cart from "./Cart";
+
 const Header = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
+
   return (
     <>
       <header>
@@ -37,18 +46,19 @@ const Header = () => {
 
       <nav>
         <div className="sections">
-          <a href="#pizza">Pizza</a>
+          <a href="#pizzas">Pizza</a>
           <a href="#snacks">Snacks</a>
           <a href="#salads">Salads</a>
           <a href="#deserts">Deserts</a>
           <a href="#drinks">Drinks</a>
         </div>
 
-        <button className="shopping-cart">
-          <Cart />
-          <p className="cart-count"> 0</p>
+        <button className="shopping-cart" onClick={toggleCart}>
+          <CartIcon />
+          <p className="cart-count"> {calcCartAmount()}</p>
         </button>
       </nav>
+      <Cart isOpen={isCartOpen} onClose={toggleCart} />
     </>
   );
 };

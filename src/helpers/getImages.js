@@ -30,7 +30,7 @@ import sprite from "../assets/drinks/sprite.jpeg";
 import water from "../assets/drinks/water.jpeg";
 
 import ceasarSalad from "../assets/salad/ceasar-salad.jpeg";
-import greekSalad from "../assets/salad/ceasar-salad.jpeg";
+import greekSalad from "../assets/salad/greek-salad.jpeg";
 
 const getImages = (category) => {
   const photos = {

@@ -1,0 +1,210 @@
+@import "./partials/colors";
+
+.cart-dialog {
+    width: 100%;
+    max-height: 70%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 50px;
+    left: 200px;
+    max-width: 800px;
+    background: white;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    .empty-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 0 1rem 0;
+        align-items: center;
+
+        p {
+            color: rgb(198, 6, 6);
+            font-size: 1.5rem;
+        }
+    }
+
+    .close-btn-cont {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        button {
+            color: $brand-orange;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+    }
+
+
+    .cart-items {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th,
+            td {
+                padding: 10px;
+                text-align: center;
+                text-justify: center;
+            }
+
+            th {
+                background-color: $brand-orange;
+                color: white;
+
+            }
+
+            img {
+                max-width: 50px;
+                max-height: 50px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            button {
+                background-color: transparent;
+                padding: 0;
+                border: none;
+                display: flex;
+                border-radius: 100%;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-size: 1.3rem;
+                color: red;
+            }
+        }
+    }
+
+    .total-container {
+        display: flex;
+        justify-content: end;
+        gap: 2rem;
+        align-items: center;
+        padding: 1.5rem 0 0.5rem 0;
+
+        .total-cost {
+            font-weight: 600;
+        }
+
+        button {
+            padding: 0.3rem 0.9rem;
+            border: none;
+            background-color: $brand-orange;
+            color: white;
+            border-radius: 15px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.cart-dialog::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .cart-dialog {
+        width: 100%;
+        height: 90%;
+        top: 35px;
+        left: 0px;
+
+
+
+        .empty-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1rem 0 1rem 0;
+            align-items: center;
+
+            p {
+                color: rgb(198, 6, 6);
+                font-size: 1.5rem;
+            }
+        }
+
+        .close-btn-cont {
+
+            button {
+                font-size: 1.5rem;
+            }
+        }
+
+
+        .cart-items {
+
+            table {
+                border-collapse: collapse;
+                font-size: 0.7rem;
+
+                th,
+                td {
+                    padding: 10px;
+                    text-align: center;
+                    text-justify: center;
+                }
+
+                th {
+                    background-color: $brand-orange;
+                    color: white;
+
+                }
+
+                img {
+                    max-width: 50px;
+                    max-height: 50px;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                button {
+                    background-color: transparent;
+                    padding: 0;
+                    border: none;
+                    display: flex;
+                    border-radius: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    font-size: 1.3rem;
+                    color: red;
+                }
+            }
+        }
+
+        .total-container {
+            display: flex;
+            justify-content: end;
+            gap: 2rem;
+            align-items: center;
+            padding: 1.5rem 0 0.5rem 0;
+
+            .total-cost {
+                font-weight: 600;
+                font-size: .8rem;
+            }
+
+            button {
+                padding: 0.3rem 0.9rem;
+                border: none;
+                background-color: $brand-orange;
+                color: white;
+                border-radius: 15px;
+                font-size: .7rem;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+}
