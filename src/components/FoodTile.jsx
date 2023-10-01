@@ -27,7 +27,7 @@ const FoodTile = ({ foodObj }) => {
           <p className="ingredients">{foodObj.ingredients}</p>
         </div>
         <div className="price-container">
-          <p className="price">€{foodObj.price}</p>
+          <p className="price">{foodObj.price} €</p>
           <button className="add-food-btn" onClick={handleAddItem}>
             Add
           </button>

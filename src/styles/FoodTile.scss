@@ -52,6 +52,7 @@
         width: 95%;
         margin: 0 0 0 0.5rem;
         align-items: center;
+        border-bottom: 1px solid rgb(182, 178, 178);
 
         img {
             height: 100px;
@@ -62,7 +63,8 @@
             width: 80%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            align-items: center;
             gap: 0;
 
             .name {
@@ -78,22 +80,28 @@
 
             .price-container {
                 padding: 0;
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-between;
-                gap: 0.5rem;
+                justify-content: space-evenly;
+                gap: 50%;
 
 
                 .price {
-                    font-size: 0.7rem;
-                    padding: 0;
+                    font-size: 0.9rem;
+                    padding: .1rem .3rem;
+                    border-radius: 15px;
                     margin: 0;
+                    font-weight: 600;
+                    background-color: rgb(255, 240, 230);
+                    color: rgb(209, 87, 0);
+
                 }
 
                 .add-food-btn {
                     margin: 0;
-                    font-size: 0.7rem;
+                    font-size: 0.9rem;
                     padding: 0.2rem 0.6rem;
                 }
             }
