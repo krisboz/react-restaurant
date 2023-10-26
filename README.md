@@ -1,4 +1,4 @@
-#Restaurant FE App made with React
+# Restaurant FE App made with React
 
 It's a fully responsive FE React App for an imaginary Pizzeria
 It has a fully function shopping cart that I've decided to solve using just plain old
