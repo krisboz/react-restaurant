@@ -1,6 +1,7 @@
 # Restaurant FE App made with React
 
 Live Preview: https://krisboz.github.io/react-restaurant/
+
 It's a fully responsive FE React App for an imaginary Pizzeria
 It has a fully function shopping cart that I've decided to solve using just plain old
 Context API in combination with my own reducers.
